@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                penguin: '#FFFBF0'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center my-10">Wellcome to <span class="text-blue-600 font-semibold">Bkash Bank LTD</span></h1>
+    </header>
+
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-8/12 mx-auto text-yellow-50">
+                <div class="bg-green-400 p-8 rounded-xl">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-indigo-400 p-8 rounded-xl">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div id="total" class="bg-pink-400 p-8 pr-4  rounded-xl">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- transtesition start -->
+        <section class="mt-12">
+          <div class="grid grid-cols-2 gap-4 w-8/12 mx-auto">
+            <div class="mt-12 p-8 bg-sky-400 rounded-2xl">
+              <h3 class="text-3xl text-yellow-50">Plase Deposit</h3>
+
+              <input placeholder="$ Amount you want to deposit?" class="w-9/12 block mb-2 px-3" type="text" name="text" id="deposit-input-field">
+
+              <button id="btn-submit-deposit" class="py-1 block mb-2 px-5 rounded-md hover:bg-amber-600 bg-yellow-500" type="submit">Submit</button>
+          </div>
+
+          <div class="mt-12 p-8  bg-violet-600 rounded-2xl">
+            <h3 class="text-3xl text-yellow-50">Plase Withdraw</h3>
+
+            <input placeholder="$ Amount you want to withdraw?" class="w-9/12 block mb-2 px-3" type="text" name="text" id="withdrow-input-field">
+
+            <button id="btn-submit-withdraw" class="py-1 block mb-2 px-5 rounded-md hover:bg-amber-600 bg-yellow-500" type="submit">Submit</button>
+        </div>
+          </div>
+        </section>
+        <!-- transtesition end -->
+    </main>
+
+    <script src="assets/js/functional.js"></script>
+    <script src="assets/js/diposit.js"></script>
+    <script src="assets/js/withdrow.js"></script>
+
+</body>
+</html>

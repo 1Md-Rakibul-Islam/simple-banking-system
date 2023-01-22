@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                penguin: '#FFFBF0'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center my-10">Wellcome to <span class="text-blue-600 font-semibold">Bkash Bank LTD</span></h1>
+    </header>
+
+    <main>
+      <div class="w-7/12 mx-auto mt-12 p-8  bg-indigo-400 rounded-2xl">
+        <h2 class="text-3xl mb-4 font-medium">Plase Login</h2>
+        <label class="mb-2 px-3" for="gmail">Email</label><br>
+        <input placeholder="Enter your email" class="w-9/12 block mb-2 px-3" type="email" name="gmail" id="user-email">
+        <label class="mb-2 px-3" for="gmail">Password</label>
+        <input placeholder="Enter your password" class="w-9/12 block mb-2 px-3" type="password" name="password" id="user-password">
+        <button id="btn-submit" class="py-1 block mb-2 px-5 rounded-md hover:bg-blue-100 bg-yellow-500" type="submit">Submit</button>
+    </div>
+    </main>
+
+    <script src="assets/js/dom-script.js"></script>
+</body>
+</html>
